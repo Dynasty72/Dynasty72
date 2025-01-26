@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>羽球賽報名表</title>
-<style>
+ <style>
 /* style.css 內的內容直接貼在這裡 */
 body {
   font-family: Arial, sans-serif;
@@ -124,7 +124,7 @@ button:hover {
     <p>感謝您的報名！我們已收到您的報名資訊。</p>
   </div>
   <script src="server.js"></script>
-  <script src="報名表tests2.js"></script>
   <script src="資料收集.js"></script>
+  <script src="報名表tests2.js"></script>
 </body>
 </html>
