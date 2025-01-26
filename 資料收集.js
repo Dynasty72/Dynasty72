@@ -12,11 +12,15 @@
   // 初始化 Firebase
   const app = firebase.initializeApp(firebaseConfig);
   const database = firebase.database(app);
-
+  
   // 儲存表單資料
-  function saveFormData(name, email, skillLevel, phone) {
-    const reference = database.ref('registrations');
-    const newRegistration = reference.push();
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const skillLevel = document.getElementById("skillLevel").value;
+  const phone = document.getElementById("phone").value;
+ // function saveFormData(name, email, skillLevel, phone) {
+    const reference = database.ref('registrations').push;
+    //const newRegistration = reference.push();
     newRegistration.set({
       name: name,
       email: email,
@@ -24,10 +28,10 @@
       phone: phone
     })
     .then(() => {
-      alert("報名資料已成功儲存！");
+      console.log("報名資料已成功儲存！");
     })
     .catch(error => {
-      alert("儲存失敗：" + error.message);
+      console.log("儲存失敗：" + error.message);
     });
   }
 
