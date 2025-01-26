@@ -1,8 +1,8 @@
-// 引入 Firebase 套件
-import { initializeApp } from "firebase/app";
-import { getDatabase, ref, push, set } from "firebase/database";
-
 // Firebase 配置
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
+
+// 初始化 Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyBz3qZGPIqDeF8d9nppWzGnmlgI3-07E9E",
   authDomain: "dynasty72-3b76d.firebaseapp.com",
@@ -14,15 +14,15 @@ const firebaseConfig = {
   measurementId: "G-S1EX422VNQ"
 };
 
-// 初始化 Firebase
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
-// 儲存表單資料
+// 儲存資料的函數
 function saveFormData(name, email, skillLevel, phone) {
-  const reference = ref(database, "registrations"); // 指向 Firebase 路徑
-  const newRegistration = push(reference); // 建立新節點
-  set(newRegistration, {
+  const registrationsRef = ref(database, "registrations");
+  const newRegistrationRef = push(registrationsRef);
+
+  set(newRegistrationRef, {
     name: name,
     email: email,
     skillLevel: skillLevel,
@@ -30,8 +30,9 @@ function saveFormData(name, email, skillLevel, phone) {
   })
     .then(() => {
       console.log("報名資料已成功儲存！");
+      document.getElementById("success-message").style.display = "block";
     })
-    .catch((error) => {
+    .catch(error => {
       console.error("儲存失敗：" + error.message);
     });
 }
