@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // 連接 MongoDB
-const mongoURI = 'mongodb://127.0.0.1:27017/registration'; // 修改為您的 MongoDB URI
+const mongoURI = 'mongodb+srv://<Dynasty72>:<denny1998927>@cluster0.phrjq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'; // 修改為您的 MongoDB URI
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('成功連接到 MongoDB'))
   .catch(err => console.error('MongoDB 連接失敗：', err));
