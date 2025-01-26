@@ -1,10 +1,10 @@
 <html lang="zh-Hant">
 <head>
-  
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>羽球賽報名表</title>
-  
+    <script src="資料收集.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
