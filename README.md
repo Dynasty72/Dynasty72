@@ -37,7 +37,8 @@
   <div id="success-message" style="display:none;">
     <p>感謝您的報名！我們已收到您的報名資訊。</p>
   </div>
-  <script src="報名表tests.js"></script>
+  <script src="server.js"></script>
+  <script src="報名表tests2.js"></script>
   <script src="資料收集.js"></script>
 </body>
 </html>
