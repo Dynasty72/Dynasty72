@@ -1,12 +1,12 @@
+<!DOCTYPE html>
+
 <html lang="zh-Hant">
 <head>
-    
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>羽球賽報名表</title>
-    <script src="資料收集.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+  
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -102,7 +102,7 @@
     margin-top: 20px;
 }
     </style>
-
+</head>
     <form id="registration-form">
         <h2>報名表單</h2>
         <form action="#" method="POST">
@@ -126,7 +126,7 @@
             <button type="submit">報名參加</button>
         </form>
 
-    
+    </section>
     <div id="success-message" style="display:none;">
         <p>感謝您的報名！我們已收到您的報名資訊。</p>
     </div>
@@ -159,4 +159,6 @@
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
  </script>
+</body>
+</html>
 
