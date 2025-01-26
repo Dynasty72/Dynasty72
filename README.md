@@ -102,7 +102,7 @@
     margin-top: 20px;
 }
     </style>
-</head>
+
     <form id="registration-form">
         <h2>報名表單</h2>
         <form action="#" method="POST">
@@ -126,7 +126,7 @@
             <button type="submit">報名參加</button>
         </form>
 
-    </section>
+    
     <div id="success-message" style="display:none;">
         <p>感謝您的報名！我們已收到您的報名資訊。</p>
     </div>
