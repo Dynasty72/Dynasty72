@@ -1,5 +1,7 @@
 <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+ import { initializeApp } from "firebase/app";
+ import { getAnalytics } from "firebase/analytics";
 // 這裡是 Firebase 配置，將下面的代碼替換為你在 Firebase 控制台獲取的設定。
   const firebaseConfig = {
     apiKey: "AIzaSyBz3qZGPIqDeF8d9nppWzGnmlgI3-07E9E",
@@ -9,6 +11,7 @@
     storageBucket: "dynasty72-3b76d.firebasestorage.app",
     messagingSenderId: "10319445859",
     appId: "1:10319445859:web:11fdb04884d2e2cbe99d56"
+    measurementId: "G-S1EX422VNQ"
   };
 
   // 初始化 Firebase
