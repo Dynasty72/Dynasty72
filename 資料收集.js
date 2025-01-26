@@ -6,11 +6,11 @@
   const firebaseConfig = {
     apiKey: "AIzaSyBz3qZGPIqDeF8d9nppWzGnmlgI3-07E9E",
     authDomain: "dynasty72-3b76d.firebaseapp.com",
-    databaseURL: "https://dynasty72-3b76d.firebaseio.com",
+    databaseURL: "https://dynasty72-3b76d-default-rtdb.firebaseio.com",
     projectId: "dynasty72-3b76d",
     storageBucket: "dynasty72-3b76d.firebasestorage.app",
     messagingSenderId: "10319445859",
-    appId: "1:10319445859:web:11fdb04884d2e2cbe99d56"
+    appId: "1:10319445859:web:11fdb04884d2e2cbe99d56",
     measurementId: "G-S1EX422VNQ"
   };
 
