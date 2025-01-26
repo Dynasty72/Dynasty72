@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 
 <html lang="zh-Hant">
 <head>
@@ -134,6 +134,5 @@
         <p>&copy; 2025 非常讚羽球隊</p>
     </footer>
     <script src="報名表test2.js"></script>
-</body>
-</html>
+
 
