@@ -1,4 +1,6 @@
-  // 這裡是 Firebase 配置，將下面的代碼替換為你在 Firebase 控制台獲取的設定。
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+// 這裡是 Firebase 配置，將下面的代碼替換為你在 Firebase 控制台獲取的設定。
   const firebaseConfig = {
     apiKey: "AIzaSyBz3qZGPIqDeF8d9nppWzGnmlgI3-07E9E",
     authDomain: "dynasty72-3b76d.firebaseapp.com",
