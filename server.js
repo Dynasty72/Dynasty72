@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB URI 從環境變數讀取
-const mongoURI = process.env.MONGO_URI || 'mongodb+srv://<Dynasty72>:<denny1998927>@cluster0.phrjq.mongodb.net/registration?retryWrites=true&w=majority';
+const mongoURI = process.env.MONGO_URI || 'mongodb+srv://<Dynasty72>:<denny1998927>@cluster0.phrjq.mongodb.net/badminton?retryWrites=true&w=majority';
 
 // 連接 MongoDB
 mongoose
